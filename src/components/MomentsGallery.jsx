@@ -4,20 +4,17 @@ import { Hairline, Reveal } from './Reveal';
 export function MomentsGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
-  // Column 1 (Clean, balanced photos)
-  const column1 = [
+  // Uniform grid: every tile has the same shape so rows line up perfectly
+  const photos = [
     { src: '/images/client/royal-painting.jpg?v=8', caption: 'Royal Elegance' },
-    { src: '/images/client/dinner-date.jpg?v=8', caption: 'Dinner &amp; Blooms' },
-  ];
-
-  // Column 2 (Clean, balanced photos)
-  const column2 = [
+    { src: '/images/client/fort-gaze.jpg?v=8', caption: 'Fort Gaze' },
     { src: '/images/client/cute-smile.jpg?v=8', caption: 'Sweetest Smiles' },
     { src: '/images/client/embrace.jpg?v=8', caption: 'A Warm Embrace' },
+    { src: '/images/client/dinner-date.jpg?v=8', caption: 'Dinner &amp; Blooms', wide: true },
   ];
 
   return (
-    <section className="relative py-14 px-4 sm:px-6 bg-cream overflow-hidden">
+    <section className="relative py-12 px-6 bg-cream overflow-hidden">
       <div className="max-w-md mx-auto text-center">
         <Reveal>
           <p className="text-[10px] tracking-wider-luxe uppercase text-gold-foil mb-2 font-semibold">
@@ -32,55 +29,34 @@ export function MomentsGallery() {
           <Hairline className="w-16 mx-auto my-7" />
         </Reveal>
 
-        {/* 2-Column Balanced Gallery */}
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-6 items-start text-left">
-          {/* Column 1 */}
-          <div className="flex flex-col gap-3 sm:gap-4">
-            {column1.map((item, idx) => (
-              <Reveal key={idx} delay={idx * 80}>
-                <div
-                  onClick={() => setSelectedPhoto(item.src)}
-                  className="hover-lift group relative overflow-hidden rounded-lg bg-card border border-gold/25 shadow-soft cursor-pointer"
-                >
-                  <img
-                    src={item.src}
-                    alt="Chetan &amp; Suhani"
-                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-3">
-                    <span className="text-[10px] tracking-luxe uppercase text-ivory font-semibold">
-                      ✦ Tap to View ✦
-                    </span>
-                  </div>
+        {/* Uniform 2-column gallery */}
+        <div className="grid grid-cols-2 gap-3 text-left" style={{ marginTop: 24 }}>
+          {photos.map((item, idx) => (
+            <Reveal
+              key={idx}
+              delay={(idx % 2) * 80}
+              className={item.wide ? 'col-span-2' : ''}
+            >
+              <div
+                onClick={() => setSelectedPhoto(item.src)}
+                className="hover-lift group relative overflow-hidden rounded-lg bg-card border border-gold/25 shadow-soft cursor-pointer"
+                style={{ aspectRatio: item.wide ? '4 / 3' : '3 / 4' }}
+              >
+                <img
+                  src={item.src}
+                  alt="Suhani &amp; Chetan"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={{ objectPosition: 'center 30%' }}
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-3">
+                  <span className="text-[10px] tracking-luxe uppercase text-ivory font-semibold">
+                    ✦ Tap to View ✦
+                  </span>
                 </div>
-              </Reveal>
-            ))}
-          </div>
-
-          {/* Column 2 */}
-          <div className="flex flex-col gap-3 sm:gap-4">
-            {column2.map((item, idx) => (
-              <Reveal key={idx} delay={idx * 80 + 40}>
-                <div
-                  onClick={() => setSelectedPhoto(item.src)}
-                  className="hover-lift group relative overflow-hidden rounded-lg bg-card border border-gold/25 shadow-soft cursor-pointer"
-                >
-                  <img
-                    src={item.src}
-                    alt="Chetan &amp; Suhani"
-                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-3">
-                    <span className="text-[10px] tracking-luxe uppercase text-ivory font-semibold">
-                      ✦ Tap to View ✦
-                    </span>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
 
