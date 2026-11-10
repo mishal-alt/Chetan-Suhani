@@ -12,7 +12,7 @@ export const invitationData = {
       fullName: "Suhani Kumawat",
       initial: "S",
       parents: "Late Mr. Nemichand Kumawat & Mrs. Rukmani Devi",
-      family: "Kumawat Family",
+      family: "Ghodela Family",
     },
     hashtag: "#ChetanKiSuhani",
     weddingDate: "2026-12-11T20:00:00+05:30",
@@ -26,7 +26,7 @@ export const invitationData = {
   invitationHeader: {
     blessing: "✦ With Divine Blessings ✦",
     blessingLine: "and eternal love of Late Mr. Nemichand Kumawat",
-    host: "The Marwal & Kumawat Families cordially invite you",
+    host: "The Marwal & Ghodela Families cordially invite you",
   },
 
   inLovingMemory: {
@@ -45,7 +45,7 @@ export const invitationData = {
 
   specialRegards: {
     title: "With Best Compliments",
-    subtitle: "Marwal & Kumawat Families",
+    subtitle: "Marwal & Ghodela Families",
     description: "Near, Dear, Relatives & Friends",
     note: "Your presence and blessings are the greatest gift on our special day.",
   },

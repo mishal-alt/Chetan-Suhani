@@ -29,7 +29,7 @@ export function SpecialRegardsSection() {
             </p>
             <div className="mt-5 inline-flex items-center gap-2 text-gold-foil text-sm font-script">
               <span>✦</span>
-              <span>Marwal &amp; Kumawat Families</span>
+              <span>Marwal &amp; Ghodela Families</span>
               <span>✦</span>
             </div>
           </div>

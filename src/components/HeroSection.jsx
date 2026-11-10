@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <img
           src="/images/couple-portrait.jpg?v=5"
-          alt={`${couple.groom.name} & ${couple.bride.name}`}
+          alt={`${couple.bride.name} & ${couple.groom.name}`}
           className="object-cover animate-slow-zoom object-[50%_35%] sm:object-[50%_30%] origin-center"
           style={{
             position: 'absolute',
@@ -59,8 +59,8 @@ export function HeroSection() {
             <Monogram
               width={110}
               className="opacity-95 animate-shimmer"
-              left={couple.groom.initial}
-              right={couple.bride.initial}
+              left={couple.bride.initial}
+              right={couple.groom.initial}
               date={couple.dateShort}
             />
           </div>
@@ -84,7 +84,7 @@ export function HeroSection() {
       </div>
 
       {/* Main Content: Exact previous design typography & hierarchy */}
-      <div className="relative z-10 min-h-[100svh] flex flex-col items-center px-6 pb-16 pt-36 sm:pt-44 text-center">
+      <div className="relative z-10 min-h-[100svh] flex flex-col items-center px-6 pb-16 text-center" style={{ paddingTop: "clamp(150px, 20svh, 175px)" }}>
         {/* Divine Blessings */}
         <div className="flex flex-col items-center gap-2 animate-fade-up">
           <div className="inline-flex items-center gap-3 px-5 py-2">
@@ -108,11 +108,11 @@ export function HeroSection() {
               {invitationHeader.host}
             </p>
             <h1 className="font-accent text-5xl sm:text-6xl md:text-7xl leading-[0.95] text-foreground">
-              {couple.groom.name}
+              {couple.bride.name}
               <span className="block font-script text-6xl sm:text-7xl md:text-8xl text-gold-foil my-2 -rotate-2 font-normal">
                 &amp;
               </span>
-              {couple.bride.name}
+              {couple.groom.name}
             </h1>
           </div>
 

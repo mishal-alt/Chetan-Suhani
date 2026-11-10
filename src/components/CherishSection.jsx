@@ -13,7 +13,7 @@ export function CherishSection() {
             A Moment We Cherish
           </div>
           <h2 className="font-accent text-2xl sm:text-3xl text-foreground leading-[1.15]">
-            {couple.groom.name} <span className="text-gold-foil">&amp;</span> {couple.bride.name}
+            {couple.bride.name} <span className="text-gold-foil">&amp;</span> {couple.groom.name}
           </h2>
           <Hairline className="w-16 mx-auto mt-4" />
         </Reveal>
@@ -22,7 +22,7 @@ export function CherishSection() {
           <div className="hover-lift relative rounded-sm overflow-hidden shadow-frame border border-gold/20">
             <img
               src="/images/couple-closeup.jpg?v=5"
-              alt={`${couple.groom.name} and ${couple.bride.name}`}
+              alt={`${couple.bride.name} and ${couple.groom.name}`}
               className="w-full aspect-[4/3] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/25 via-transparent to-transparent" />

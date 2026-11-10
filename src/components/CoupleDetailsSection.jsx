@@ -22,7 +22,27 @@ export function CoupleDetailsSection() {
         </Reveal>
 
         <div className="space-y-6">
-          {/* Groom Card */}
+          {/* Bride Card */}
+          <Reveal delay={200}>
+            <div className="hover-lift bg-card border border-gold/20 p-6 shadow-soft rounded-[2px] text-center">
+              <p className="text-[10px] tracking-wider-luxe uppercase text-gold-foil mb-1">
+                The Bride
+              </p>
+              <h3 className="font-accent text-2xl sm:text-3xl text-foreground">
+                {couple.bride.fullName}
+              </h3>
+              <p className="mt-3 text-xs sm:text-sm font-semibold text-foreground/90">
+                Beloved Daughter of
+              </p>
+              <p className="mt-1 text-sm text-foreground/90 font-medium">
+                {couple.bride.parents}
+              </p>
+              {couple.bride.family && (
+                <p className="mt-2 text-[10px] tracking-luxe uppercase text-gold-foil">
+                  ({couple.bride.family})
+                </p>
+              )}
+              {/* Groom Card */}
           <Reveal delay={100}>
             <div className="hover-lift bg-card border border-gold/20 p-6 shadow-soft rounded-[2px] text-center">
               <p className="text-[10px] tracking-wider-luxe uppercase text-gold-foil mb-1">
@@ -45,27 +65,7 @@ export function CoupleDetailsSection() {
             </div>
           </Reveal>
 
-          {/* Bride Card */}
-          <Reveal delay={200}>
-            <div className="hover-lift bg-card border border-gold/20 p-6 shadow-soft rounded-[2px] text-center">
-              <p className="text-[10px] tracking-wider-luxe uppercase text-gold-foil mb-1">
-                The Bride
-              </p>
-              <h3 className="font-accent text-2xl sm:text-3xl text-foreground">
-                {couple.bride.fullName}
-              </h3>
-              <p className="mt-3 text-xs sm:text-sm font-semibold text-foreground/90">
-                Beloved Daughter of
-              </p>
-              <p className="mt-1 text-sm text-foreground/90 font-medium">
-                {couple.bride.parents}
-              </p>
-              {couple.bride.family && (
-                <p className="mt-2 text-[10px] tracking-luxe uppercase text-gold-foil">
-                  ({couple.bride.family})
-                </p>
-              )}
-            </div>
+        </div>
           </Reveal>
         </div>
       </div>

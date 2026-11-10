@@ -8,15 +8,12 @@ export function MomentsGallery() {
   const column1 = [
     { src: '/images/client/royal-painting.jpg?v=8', caption: 'Royal Elegance' },
     { src: '/images/client/dinner-date.jpg?v=8', caption: 'Dinner &amp; Blooms' },
-    { src: '/images/client/cute-smile.jpg?v=8', caption: 'Sweetest Smiles' },
-    { src: '/images/client/embrace.jpg?v=8', caption: 'A Warm Embrace' },
   ];
 
   // Column 2 (Clean, balanced photos)
   const column2 = [
-    { src: '/images/client/lake-portrait.jpg?v=8', caption: 'By the Waters' },
-    { src: '/images/client/sunflowers.jpg?v=8', caption: 'Sunflowers &amp; Smiles' },
-    { src: '/images/client/lantern-evening.jpg?v=8', caption: 'Lantern Nights' },
+    { src: '/images/client/cute-smile.jpg?v=8', caption: 'Sweetest Smiles' },
+    { src: '/images/client/embrace.jpg?v=8', caption: 'A Warm Embrace' },
   ];
 
   return (

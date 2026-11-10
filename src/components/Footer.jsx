@@ -24,14 +24,14 @@ export function Footer() {
           <Monogram
             width={100}
             className="animate-shimmer"
-            left={couple.groom.initial}
-            right={couple.bride.initial}
+            left={couple.bride.initial}
+            right={couple.groom.initial}
             date={couple.dateShort}
           />
         </div>
 
         <h3 className="font-accent text-2xl sm:text-3xl">
-          {couple.groom.name} <span className="text-rose">♥</span> {couple.bride.name}
+          {couple.bride.name} <span className="text-rose">♥</span> {couple.groom.name}
         </h3>
         <p className="mt-3 text-[9px] tracking-wider-luxe uppercase text-gold-foil">
           {couple.hashtag}

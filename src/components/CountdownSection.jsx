@@ -58,8 +58,8 @@ export function CountdownSection() {
             <Monogram
               width={88}
               className="animate-shimmer"
-              left={couple.groom.initial}
-              right={couple.bride.initial}
+              left={couple.bride.initial}
+              right={couple.groom.initial}
               date={couple.dateShort}
             />
           </div>

@@ -42,15 +42,15 @@ export function OpeningCurtain({ isOpen, onOpen }) {
           <Monogram
             width={140}
             className="animate-shimmer"
-            left={couple.groom.initial}
-            right={couple.bride.initial}
+            left={couple.bride.initial}
+            right={couple.groom.initial}
             date={couple.dateShort}
           />
         </div>
 
         {/* Couple Names */}
         <p className="font-accent text-xl sm:text-2xl text-foreground mb-1">
-          {couple.groom.name} <span className="text-gold-foil">&amp;</span> {couple.bride.name}
+          {couple.bride.name} <span className="text-gold-foil">&amp;</span> {couple.groom.name}
         </p>
 
         <p className="text-[10px] tracking-luxe uppercase text-muted-foreground mb-10">
