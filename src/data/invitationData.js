@@ -94,8 +94,8 @@ export const invitationData = {
       name: "Laxmi Paradise",
       address: "Bal Vihar Vistar, 80 Feet Road, Gokulpura, Jaipur",
       mapEmbedUrl:
-        "https://maps.google.com/maps?q=26.8067117,75.8469033&t=&z=16&ie=UTF8&iwloc=&output=embed",
-      directionsUrl: "https://maps.app.goo.gl/voUJPHoyR8sdFsae8",
+        "https://maps.google.com/maps?q=26.9428715,75.7119329&t=&z=16&ie=UTF8&iwloc=&output=embed",
+      directionsUrl: "https://www.google.com/maps/search/?api=1&query=26.9428715,75.7119329",
     },
   },
 };
