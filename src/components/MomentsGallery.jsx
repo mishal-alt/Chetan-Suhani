@@ -6,11 +6,12 @@ export function MomentsGallery() {
 
   // Uniform grid: every tile has the same shape so rows line up perfectly
   const photos = [
-    { src: '/images/client/royal-painting.jpg?v=8', caption: 'Royal Elegance' },
-    { src: '/images/client/fort-gaze.jpg?v=8', caption: 'Fort Gaze' },
-    { src: '/images/client/cute-smile.jpg?v=8', caption: 'Sweetest Smiles' },
-    { src: '/images/client/embrace.jpg?v=8', caption: 'A Warm Embrace' },
-    { src: '/images/client/dinner-date.jpg?v=8', caption: 'Dinner &amp; Blooms', wide: true },
+    { src: '/images/client/cute-smile.jpg?v=9', caption: 'Sweetest Smiles' },
+    { src: '/images/client/embrace.jpg?v=9', caption: 'A Warm Embrace' },
+    { src: '/images/client/string-lights.jpg?v=9', caption: 'Under the Fairy Lights' },
+    { src: '/images/client/red-entrance.jpg?v=9', caption: 'Dressed to Celebrate' },
+    { src: '/images/client/dinner-date.jpg?v=9', caption: 'Dinner &amp; Blooms', wide: true },
+    { src: '/images/client/garden-selfie.jpg?v=9', caption: 'Garden Evenings', wide: true },
   ];
 
   return (
