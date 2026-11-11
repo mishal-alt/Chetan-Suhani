@@ -4,7 +4,7 @@ export const invitationData = {
       name: "Chetan",
       fullName: "Chetan Kumawat",
       initial: "C",
-      parents: "Mr. Puranmal Marwal & Mrs. Kiran Devi",
+      parents: "Mr. Puran Mal Kumawat & Mrs. Kiran Devi",
       family: "Marwal Family",
     },
     bride: {
